@@ -1,0 +1,7 @@
+.zoomLevel {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    font-size: 1.8rem;
+    user-select: none;
+}

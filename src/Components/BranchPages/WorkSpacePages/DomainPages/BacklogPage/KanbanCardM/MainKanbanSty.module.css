@@ -1,0 +1,76 @@
+.kanbanMain {
+  width: 100%;
+  height: 81vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: scroll;
+  overflow-y: auto;
+  /* position: relative; */
+}
+.kanbanMain::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 0.4rem;
+  color: transparent;
+}
+
+.kanbanMain::-webkit-scrollbar-track {
+  border-radius: 0.4rem;
+  background: transparent;
+}
+
+.kanbanMain::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 0.4rem;
+  border: 1px solid rgb(54, 53, 53);
+  width: 0.1rem;
+}
+.kanbanMain_nav {
+  padding: 30px;
+  box-shadow: 0 1px 20px rgba(56, 40, 40, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+.kanbanMain_boards_container {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  /* overflow-x: auto; */
+}
+
+.kanbanMain_boards {
+  height: 100%;
+  /* width: fit-content; */
+  width: 100%;
+  /* padding: 1rem 0rem; */
+  display: flex;
+  gap: 3rem;
+
+
+}
+
+.kanbanMain_boards_last {
+  flex-basis: 29rem;
+  min-width: 37rem;
+  height: 100%;
+
+  /* width: 100%;
+  height: 100%; */
+}
+
+.kanbanMain_boards_add-board {
+  background-color: #fff;
+  color: #000;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 0 1px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  text-align: center;
+}
+.kanbanMain_boards_add-board_edit {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}

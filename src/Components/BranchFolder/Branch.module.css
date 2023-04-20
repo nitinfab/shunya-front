@@ -1,0 +1,326 @@
+.branch {
+  width: 100%;
+  max-height: 100%;
+  background-color: #06060b;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.branch_section {
+  width: 100%;
+  max-height: 100%;
+  height: 80%;
+  /* overflow-y: scroll; */
+}
+.branch_section::-webkit-scrollbar {
+  width: 0.5rem;
+  border-radius: 4px;
+  color: transparent;
+}
+
+.branch_section::-webkit-scrollbar-track {
+  border-radius: 4px;
+  background: transparent;
+}
+
+.branch_section::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid rgb(54, 53, 53);
+  width: 0.5rem;
+}
+
+.search_container {
+  width: 100%;
+  height: 7rem;
+  padding: 2rem 1.5rem;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.search_icon {
+  position: absolute;
+  padding: 0rem;
+  left: 13%;
+  bottom: 2.7rem;
+}
+
+.inputBox {
+  width: 100%;
+  height: 3.9rem;
+  padding-left: 0.4rem;
+  padding-right: 2.7rem;
+  border: 1px solid #413e3e;
+  border-radius: 3rem;
+  /* flex-shrink: 1; */
+  box-sizing: border-box;
+  background: transparent;
+  display: flex;
+  align-items: center;
+}
+.inputBox input {
+  width: 15rem;
+  height: 3rem;
+  color: #7f7575;
+  background-color: transparent;
+  font-size: 1.3rem;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.inputBox input::placeholder {
+  font-size: 1.3rem;
+}
+
+.branch_line {
+  width: 100%;
+  /* padding: 0rem 1.5rem; */
+}
+
+.branch_menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0rem 1.5rem;
+  margin-bottom: 1.5rem;
+  justify-content: space-evenly;
+  color: #7f7575;
+  font-size: medium;
+}
+
+.branch_menu_item {
+  width: 100%;
+  max-height: 3.5rem;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-top: 2rem;
+  border: 1px solid transparent;
+  backdrop-filter: blur(6px);
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 4px 10px;
+}
+.branch_menu_item:hover {
+  background: conic-gradient(
+    from 180deg at 50% 58.33%,
+    rgba(45, 44, 60, 0.4) -90.66deg,
+    rgba(45, 44, 60, 0.4) 91.1deg,
+    rgba(45, 44, 60, 0.4) 269.34deg,
+    rgba(45, 44, 60, 0.4) 451.1deg
+  );
+  box-shadow: 0px 10px 12px rgba(25, 26, 35, 0.4);
+  border: 1px solid #7f7575;
+  backdrop-filter: blur(6px);
+  border-radius: 4px;
+}
+
+.branch_menu_item_togg {
+  /* display: flex; */
+  align-items: center;
+  width: 100%;
+  max-height: 3.5rem;
+  box-sizing: border-box;
+  /* justify-content: space-between; */
+  margin-top: 2rem;
+  border-radius: 4px;
+  padding: 4px 10px;
+}
+.branch_menu_item_togg:hover{
+  cursor: pointer;
+}
+.branch_menu_text {
+  margin-left: 0.5rem;
+}
+.branch_menu_item_right {
+  display: flex;
+  align-items: center;
+}
+
+.member {
+  width: 9.375rem;
+  margin: 0rem 0.9375rem;
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.member_style {
+  font-size: 0.7rem;
+  border: 0.2px solid #7f7575;
+  height: 1.6rem;
+  margin-left: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  color: #fff;
+}
+
+input:focus {
+  outline: none;
+}
+
+.accordion-title,
+.accordion-content {
+  padding: 1rem;
+}
+
+.accordion-content {
+  color: white;
+}
+
+/* /////////////////////////////////////////////  Members Section  */
+
+.member_cont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0rem 1.5rem;
+  margin: 2rem 0rem;
+  font-size: medium;
+}
+.member_desig {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6rem;
+  padding: 0rem 0.2rem;
+  width: auto;
+  height: 1.3rem;
+  background-color: #fa4f57;
+  color: #fff;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+}
+
+/* //////////////////////////////////////////////////////////// Member Deatisl */
+
+.branch_line {
+  width: 100%;
+  padding: 0rem 2rem;
+}
+.card_container {
+  width: 27rem;
+  height: 32rem;
+  /* z-index: 99; */
+  background: linear-gradient(
+    139.9deg,
+    #2c2d3c -1.55%,
+    rgba(25, 26, 35, 0.1) 100%
+  );
+  backdrop-filter: blur(6px);
+  position: absolute;
+  top: 24rem;
+  left: 28rem;
+  font-size: 1.4rem;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.card_section {
+  width: 100%;
+  height: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0rem 2rem;
+  margin-bottom: 1rem;
+}
+
+.member_container {
+  padding-left: 1.3rem;
+}
+.member_container:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.member_icon1 {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #055ffc;
+  font-size: 0.7rem;
+  color: #fff;
+}
+
+.branchDot {
+  height: 5px;
+  width: 5px;
+  border-radius: 3px;
+  background-color: #7f7575;
+}
+.card_top_section {
+  width: 100%;
+  height: 3.5rem;
+  background-color: #fa4f57;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
+}
+
+.card_Detail_container {
+  width: 100%;
+  height: 4rem;
+  margin-bottom: 0.6rem;
+  display: flex;
+  box-sizing: border-box;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+  margin-top: 0.5rem;
+}
+
+.pageNaveButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 10px 4px 10px;
+  margin: 2.5rem 2rem;
+  gap: 10px;
+  width: auto;
+  height: 33px;
+  border: 1px solid #413e3e;
+  filter: drop-shadow(0px 10px 15px rgba(25, 26, 35, 0.2));
+  backdrop-filter: blur(5px);
+  border-radius: 35px;
+}
+.pageNaveButton input::placeholder {
+  font-size: 1.3rem;
+}
+
+.tabSearchSection{
+position: absolute;
+width: 86%;
+min-height: 3rem;
+line-height: 3rem;
+top:6.5rem;
+padding: 1rem 1rem;
+border-radius: .4rem;
+background: linear-gradient(139.9deg, #2C2D3C -1.55%, rgba(25, 26, 35, 0.1) 100%);
+backdrop-filter: blur(6px);
+z-index: 50;
+color:#fff;
+font-size: 1.5rem;
+cursor: pointer;
+padding-left: 4rem;
+}
+
+
+.workspaceContainer{
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  margin-top: 1rem;
+  max-height: 10rem;
+  overflow-y: scroll;
+  cursor: pointer;
+}

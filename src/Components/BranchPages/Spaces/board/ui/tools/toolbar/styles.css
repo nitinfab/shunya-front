@@ -1,0 +1,256 @@
+/* FrontE/src/Components/BranchPages/Spaces/board/ui/tools/toolbar/style.css */
+
+.altitude {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+}
+
+.toolbar {
+    display: flex;
+    background: linear-gradient(139.9deg, #2C2D3C -1.55%, rgba(25, 26, 35, 0.1) 100%);
+    border: 0.5px solid #7F7575;
+    backdrop-filter: blur(6px);
+    border-radius: 18px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translate(-50%, 50%);
+}
+
+.toolbar_tool {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 24px 24px;
+    display: block;
+    height: 70px;
+    position: relative;
+    width: 70px
+}
+
+.mutitoolShapeCont {
+    max-width: 21rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: scroll;
+    border-radius: .5rem;
+    background: linear-gradient(139.9deg, #2C2D3C -1.55%, rgba(25, 26, 35, 0.1) 100%);
+    border: 0.5px solid #7F7575;
+    box-shadow: 0px 10px 12px rgba(25, 26, 35, 0.4);
+    backdrop-filter: blur(6px);
+    border-radius: 8px;
+
+
+}
+
+.toolbar_tool:hover {
+    background-color: #999;
+}
+
+.toolbar_tool_selected {
+    background-color: #ccc;
+}
+
+.toolbar_pan {
+    background-image: url("../../../../icons/pan_tool-24px.svg");
+}
+
+.toolbar_select {
+    background-image: url("../../../../icons/highlight_alt-24px.svg");
+}
+
+.toolbar_postit {
+    background-image: url("../../../../icons/sticky_note_square.svg");
+}
+
+.toolbar_postitRect {
+    background-image: url("../../../../icons/sticky_note_long_2-24px.svg");
+}
+
+.toolbar_postitRectV {
+    background-image: url("../../../../icons/sticky_note_long_V_2-24px.svg");
+}
+
+.toolbar_postitSquare {
+    background-image: url("../../../../icons/sticky_note_square.svg");
+}
+
+.toolbar_text {
+    background-image: url("../../../../icons/text.svg");
+}
+
+/* .toolbar_shape {
+    background-image: url("/icons/category-24px.svg");
+} */
+
+.toolbar_board {
+    background-image: url("../../../../icons/board.svg");
+}
+
+.toolbar_shape {
+    background-image: url("../../../../icons/check_box_outline_blank-24px.svg");
+}
+
+.toolbar_shapeRect {
+    background-image: url("../../../../icons/check_box_outline_blank-24px.svg");
+}
+
+.toolbar_shapeCircle {
+    background-image: url("../../../../icons/radio_button_unchecked-24px.svg");
+}
+
+.toolbar_shapeTriangle {
+    background-image: url("../../../../icons/triangle.svg");
+}
+
+.toolbar_line {
+    background-image: url("../../../../icons/arrow_up-24px.svg");
+}
+
+.toolbar_lineStraight {
+    background-image: url("../../../../icons/line_up-24px.svg");
+}
+
+.toolbar_lineSmooth {
+    background-image: url("../../../../icons/smooth_line-24px.svg");
+}
+
+.toolbar_lineStraightArrow {
+    background-image: url("../../../../icons/arrow_up-24px.svg");
+}
+
+.toolbar_lineSmoothArrow {
+    background-image: url("../../../../icons/swap_calls-24px.svg");
+}
+
+.toolbar_lineFreehand {
+    background-image: url("../../../../icons/edit-24px.svg");
+}
+
+.toolbar_pen {
+    background-image: url("../../../../icons/edit-24px.svg");
+}
+
+.toolbar_image {
+    background-image: url("../../../../icons/insert_photo-24px.svg");
+}
+
+.toolbar_more {
+    background-image: url("../../../../icons/more_horiz-24px.svg");
+}
+
+.toolbar_link {
+    background-image: url("../../../../icons/insert_link-24px.svg");
+}
+
+.toolbar_slide {
+    background-image: url("../../../../icons/slideshow-24px.svg");
+}
+
+.toolbar_pdf {
+    background-image: url("../../../../icons/picture_as_pdf-24px.svg");
+}
+
+.toolbar_iframe {
+    background-image: url("../../../../icons/web-24px.svg");
+}
+
+.toolbar_youtube {
+    background-image: url("../../../../icons/video_library-24px.svg");
+}
+
+.toolbar_timer {
+    background-image: url("../../../../icons/timer-24px.svg");
+}
+
+.toolbar_poll {
+    background-image: url("../../../../icons/poll-24px.svg");
+}
+
+.toolbar_emoji {
+    background-image: url("../../../../icons/insert_emoticon-24px.svg");
+}
+
+.toolbar_dice {
+    background-image: url("../../../../icons/casino-24px.svg");
+}
+
+
+
+.toolbar_submenu {
+    display: flex;
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    left: 55px;
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+    transform: translateY(-23px);
+    transition: opacity .3s, transform .3s;
+    bottom: 110%;
+}
+
+.toolbar_submenu_scrollContainer {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    max-height: 280px;
+    width: auto;
+    /* background-color: transparent; */
+}
+
+.toolbar_isVisible {
+    opacity: 1;
+    pointer-events: all;
+    transform: none;
+}
+
+/* .leftArrow {
+    border-right: 8px solid #fff;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    height: 1px;
+    left: -8px;
+    position: absolute;
+    top: 8px;
+    width: 1px;
+} */
+
+#drawCanvas {
+    left: 0;
+    position: absolute;
+    top: 0;
+    height: auto;
+    width: auto;
+}
+
+.selectionArea {
+    border: 1px solid blue;
+    background-color: rgba(0, 0, 255, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.emojiCharacter {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    justify-content: center;
+    font-family: 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji', Times, Symbola, Aegyptus, Code2000, Code2001, Code2002, Musica, serif, LastResort;
+    font-size: 24px;
+}
+
+.toolbar_subMenu_column {
+    display: flex;
+}

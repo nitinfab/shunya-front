@@ -1,0 +1,71 @@
+.branch_line {
+    width: 100%;
+    padding: 1.5rem 0rem;
+    border: ".25px solid #fff";
+}
+
+.weekBorder_1 {
+    border-bottom: 1px solid #413E3E;
+}
+
+.weekBorder_2 {
+    padding: 2.5rem;
+    font-size: 1.5rem;
+    /* padding-left: 1rem;
+    padding-right: 1rem; */
+    border-right: 1px solid #413E3E;
+}
+
+.weekBorder_3 {
+    font-size: 1.5rem;
+    /* padding: 1rem; */
+    cursor: pointer;
+    border-bottom: 1px solid #413E3E;
+}
+
+
+.event {
+    border: 1px solid #ccc;
+    padding: 4px;
+    margin: 2px;
+    
+
+}
+.ganttTimePeriod21{
+  display: grid !important;
+  grid-auto-flow: column !important;
+  grid-auto-columns: minmax(70px, 1fr) !important;
+   /* outline: 0.5px solid var(--color-outline); */
+  text-align: center !important;
+  /* height: var(--cell-height); */
+  height: 3rem !important; 
+  font-size:1.2rem !important;
+  /* background-color:red !important; */
+}
+
+
+
+
+/* myTaskState.map((event) => {
+    const eventStartHour = parseInt(event.start.split(" ")[1]);
+    const eventEndHour = parseInt(event.end.split(" ")[1]);
+    if(hour >= eventStartHour && hour <= eventEndHour) {
+      const eventDuration = eventEndHour - eventStartHour + 1;
+      return (
+        <div 
+          key={event.id}
+          style={{
+            // width: `${eventDuration * 100}px`,
+            height: "auto",
+            padding: "1rem",
+            border: "1px solid #7f7575",
+            marginBottom: "1rem"
+          }}
+        >
+          {event.name}
+        </div>
+      );
+    } else {
+      return null;
+    }
+  }) */

@@ -1,0 +1,143 @@
+.boardControls {
+    display: flex;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+}
+
+.slideList_controls {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    padding: 8px;
+    position: relative;
+}
+
+.iconButton {
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: 24px 24px;
+    cursor: pointer;
+    display: flex;
+    height: 24px;
+    width: 24px
+}
+
+.iconButton:hover {
+    background-color: #ccc;
+}
+
+.forward {
+    background-image: url("../../../icons/arrow_forward-24px.svg");
+    background-position: center right;
+    border-left: 1px solid #ccc;
+    padding-left: 8px;
+}
+
+.backward {
+    background-image: url("../../../icons/arrow_back-24px.svg");
+    background-position: center left;
+    border-right: 1px solid #ccc;
+    padding-right: 8px;
+    margin-right: 8px;
+}
+
+.dropDown {
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-image: url("../../../icons/expand_less-24px.svg");
+    background-position: center right;
+    cursor: pointer;
+    padding-right: 24px;
+}
+
+.dropDown.openIcon {
+    background-image: url("../../../icons/expand_more-24px.svg");
+}
+
+.buttonDisabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.slideList.dropDown_open {
+    display: block;
+}
+
+.slideList {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    overflow: scroll;
+    position: absolute;
+    top: 0;
+    max-height: 176px;
+    transform: translateY(-100%);
+    width: 100%;
+}
+
+.slideList_name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.slideList_name:hover {
+    background-color: #ccc;
+}
+
+.slideList_tools {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slideList_editName {
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-image: url("../../../icons/edit-24px.svg");
+    background-position: center right;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.slideList_close {
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-image: url("../../../icons/close-24px.svg");
+    background-position: center center;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.slideList_moveUp {
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-image: url("../../../icons/arrow_drop_up-24px.svg");
+    background-position: center right;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.slideList_moveDown {
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-image: url("../../../icons/arrow_drop_down-24px.svg");
+    background-position: center right;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+
+@media screen and (min-width: 768px) {}

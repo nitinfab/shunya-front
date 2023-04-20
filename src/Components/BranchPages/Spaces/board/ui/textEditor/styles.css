@@ -1,0 +1,9 @@
+.textContainer {
+    display: block;
+    line-height: 1.4em;
+    padding: 8px;
+    min-width: 2px;
+}
+.textContainer:focus {
+    outline : none;
+}

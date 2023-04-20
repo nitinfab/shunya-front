@@ -1,0 +1,46 @@
+.branch_line {
+    width: 100%;
+    padding: 1.5rem 0rem;
+    border: ".25px solid #fff";
+}
+.weekContainer{
+    /* border:1px solid red; */
+    max-height: 100%;
+}
+
+.weekBorder_1 {
+    border-bottom: 1px solid #413E3E;
+}
+
+.weekBorder_2 {
+    padding-top: 3rem;
+    font-size: 1.5rem;
+    display: inline-block;
+    width: 8rem;
+    height: 8rem;
+    text-align: center;
+    /* padding-left: 1rem;
+    padding-right: 1rem; */
+    /* border-right: 1px solid #413E3E; */
+}
+
+.weekBorder_3 {
+    font-size: 1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    border-bottom: 1px solid #413E3E;
+}
+.EventContainer{
+display: flex;
+align-items: center;
+justify-content: space-between;
+font-size: 1.2rem;
+padding: .8rem;
+    width:25rem;
+    height: 6rem;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+background: linear-gradient(139.9deg, #2C2D3C -1.55%, rgba(25, 26, 35, 0.1) 100%);
+border: 0.5px solid #7F7575;
+backdrop-filter: blur(10px);
+}

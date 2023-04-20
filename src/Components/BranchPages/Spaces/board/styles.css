@@ -1,0 +1,57 @@
+.boardWrapper {
+    position: relative;
+    /* background-image: linear-gradient(rgba(255, 255, 255, 1) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 1) 1px, transparent 1px); */
+    background-size: 48px 48px;
+
+}
+
+#board {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.pan {
+    cursor: grab;
+}
+
+.select {
+    cursor: default;
+}
+
+.shapeRect,
+.shapeCircle,
+.shapeTriangle {
+    cursor: crosshair;
+}
+
+.text {
+    cursor: crosshair;
+}
+
+.postit,
+.postitRect,
+.postitSquare,
+.postitRectV {
+    cursor: crosshair;
+}
+
+.lineStraight,
+.lineSmooth,
+.lineStraightArrow,
+.lineSmoothArrow,
+.lineFreehand {
+    cursor: crosshair;
+}
+
+.image {
+    cursor: crosshair;
+}
+
+.bottomLeft {
+    bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    left: 16px;
+    position: absolute;
+}

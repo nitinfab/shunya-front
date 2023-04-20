@@ -1,0 +1,7 @@
+.selectedBorderColor {
+    background-color: #eee;
+    cursor: pointer;
+    height: 22px;
+    width: 22px;
+    border: 2px solid #000;
+}

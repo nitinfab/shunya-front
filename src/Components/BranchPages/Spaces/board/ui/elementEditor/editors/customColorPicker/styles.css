@@ -1,0 +1,16 @@
+.opacityPicker {
+    display : flex;
+}
+
+.opacityLabel {
+    font-size : 8px;
+    padding: 0 8px;
+}
+
+.transparentLine {
+    background-color: red;
+    margin-top: 12px;
+    height : 1px;
+    width : 100%;
+    transform: rotate(45deg);
+}

@@ -1,0 +1,491 @@
+.semiCircle1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 10px;
+  gap: 8px;
+  width: auto;
+  height: 20px;
+  font-size: 1.2rem;
+  /* Grey */
+  border: 0.5px solid #413e3e;
+  border-radius: 10px;
+}
+.semiCircle2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 10px;
+  gap: 8px;
+  font-size: 1.2rem;
+
+  width: 72px;
+  height: 20px;
+
+  border: 0.5px solid #fa4f57;
+  border-radius: 10px;
+}
+.semiCircle3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 8px;
+  gap: 10px;
+  font-size: 1.2rem;
+  width: auto;
+  height: 2.5rem;
+  border: 1px solid #253e55;
+  border-radius: 20px;
+}
+
+
+/* Style the custom select container */
+.custom_select {
+  position: relative;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+/* Style the selected option */
+.select_selected {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style the options dropdown */
+.select_options {
+  display: none;
+  position: absolute;
+  z-index: 999;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #f7f7f7;
+  overflow-y: auto;
+  max-height: 200px;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+}
+
+/* Show the options dropdown when the select is clicked */
+.custom_select.open .select-options {
+  display: block;
+}
+
+/* Style the options */
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Style the selected option */
+.option.selected {
+  background-color: #e9e9e9;
+}
+
+/* Style the hover effect on options */
+.option:hover {
+  background-color: #e9e9e9;
+}
+
+
+.selectableDrop{
+  margin-left: 1.5rem;
+  max-width: 2.5rem;
+}
+.priorityMainContainer{
+
+  position: absolute;
+  top:5rem;
+  left:4rem;
+  z-index: 20;
+}
+.priorityContainer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap:1.5rem;
+  padding: 1rem;
+  text-decoration: none;
+  list-style: none;
+  height: auto;
+background: linear-gradient(139.9deg, #2C2D3C -1.55%, rgba(25, 26, 35, 0.1) 100%);
+border: 0.5px solid #7F7575;
+backdrop-filter: blur(6px);
+border-radius: .5rem;
+
+}
+
+  /* ////////////////////////////////  New Domain */
+  .editinputStyle{
+    background: transparent;
+    /* border: .5px solid #7f7575; */
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.4rem;
+    color: #fff;
+    padding: .5rem;
+    height: 4rem;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+  .editinputStyle:focus{
+    border:1px solid #6c79ff;
+  } 
+  
+  .editable1_sub{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(10, 10, 10, 0.6);
+    padding:0rem 1.5rem;
+    padding-bottom: 1rem;
+    border-radius: .5rem;
+    position: absolute;
+    top:0%;
+    left:0%;
+    z-index: 15;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+  }
+  .editable1_sub1{
+    width: 750px;
+    min-height: 20rem;
+    background: linear-gradient(139.9deg, #2C2D3C -1.55%, rgba(25, 26, 35, 0.1) 100%);
+  
+    /* Grey light */
+    border: 0.5px solid #7F7575;
+    backdrop-filter: blur(6px);
+    
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 4px;
+    padding:0rem 1.5rem;
+    border-radius: .5rem;
+    position: absolute;
+    top:35vh;
+    left:30%;
+    z-index: 16;
+  }
+  .crossStyle1{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    /* width: 100%; */
+    height: 100%;
+    width:4rem;
+    padding: .8rem 1rem;
+    border: 0.428571px solid transparent;
+  
+  }
+  .crossStyle1:hover{
+    border-radius: .5rem;
+    background: linear-gradient(
+      135deg,
+      rgba(44, 45, 60, 0.8) 0%,
+      rgba(20, 20, 29, 0.1) 100%
+    );
+    
+    border: 0.428571px solid #413e3e;
+    box-shadow: 0px 3.42857px 10.2857px rgba(25, 26, 35, 0.2);
+    backdrop-filter: blur(4.28571px);
+  }
+  
+  .AddStyle{
+    width: auto;
+    /* height: 100%; */
+    display: inline-block;
+    padding: .7rem 1.5rem;
+    color:#fff;
+    font-size: 1.2rem;
+    border-radius: .5rem;
+    border: 0.428571px solid #413e3e;
+  }
+  .AddStyle:hover{
+    background: linear-gradient(
+      135deg,
+      rgba(44, 45, 60, 0.8) 0%,
+      rgba(20, 20, 29, 0.1) 100%
+    );
+    border: 0.428571px solid #413e3e;
+    box-shadow: 0px 3.42857px 10.2857px rgba(25, 26, 35, 0.2);
+    backdrop-filter: blur(4.28571px);
+  }
+  
+  .AllTeamContainer{
+    width:100%;
+    /* max-height: 9.6rem; */
+    /* height: auto; */
+    /* overflow-x: scroll; */
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  
+  }
+  .AllTeamSubContainer{
+    max-width:35rem;
+    /* height: 10.5rem; */
+    overflow-x: scroll;
+    display: flex;
+    align-items: center;
+  }
+  .AllTeamSubContainer1{
+    max-width:35rem;
+    /* height: 10.5rem; */
+    overflow-x: scroll;
+    display: flex;
+    align-items: center;
+  }
+  .AllTeamSubContainer1::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 0.4rem;
+    color: transparent;
+  }
+  
+  .AllTeamSubContainer1::-webkit-scrollbar-track {
+    border-radius: 0.4rem;
+    background: transparent;
+  }
+  
+  .AllTeamSubContainer1::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 0.4rem;
+    border: 1px solid rgb(54, 53, 53);
+    width: 0.1rem;
+  }
+  .AllTeamSubContainer::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 0.4rem;
+    color: transparent;
+  }
+  
+  .AllTeamSubContainer::-webkit-scrollbar-track {
+    border-radius: 0.4rem;
+    background: transparent;
+  }
+  
+  .AllTeamSubContainer::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 0.4rem;
+    border: 1px solid rgb(54, 53, 53);
+    width: 0.1rem;
+  }
+  
+
+
+.Listpercentage{
+position: absolute;
+margin-right: 1rem;
+bottom:0rem;
+height: .5rem;
+border: .5px solid #fff;
+  background-color: rgb(156, 156, 41);
+  border-radius: .8rem;
+  margin-top: .1rem;
+}
+
+.userAssignContainer{
+  position: absolute;
+  width: 19rem;
+max-height: 24rem;
+padding: 1rem;
+right:4%;
+top:75%;
+background: linear-gradient(139.9deg, #2C2D3C -1.55%, rgba(25, 26, 35, 0.1) 100%);
+border: 0.5px solid #7F7575;
+backdrop-filter: blur(6px);
+border-radius: 8px;
+z-index: 3;
+}
+
+.assignSection{
+  /* height: 14rem; */
+  max-height: 14rem;
+  overflow: scroll;
+
+}
+.unassignedSection{
+  height: 6.6rem;
+  max-height: 6rem;
+  overflow: scroll;
+
+}
+.labelContainer{
+  width: 190px;
+height: auto;
+display: flex;
+flex-direction: column;
+padding: 1rem;
+position: absolute;
+top:80%;
+right: 7%;
+background: linear-gradient(139.9deg, #2C2D3C -1.55%, rgba(25, 26, 35, 0.1) 100%);
+border: 0.5px solid #7F7575;
+box-shadow: 0px 10px 12px rgba(25, 26, 35, 0.4);
+backdrop-filter: blur(6px);
+border-radius: 8px;
+z-index: 3;
+}
+
+.labelContainerimage{
+margin-left: .5rem;
+  display: none;
+}
+.labelContainerflex{
+  display: flex;
+  align-items: center;
+  height:2.2rem;
+  border:1px solid transparent;
+  margin-bottom: 1rem;
+}
+.labelContainerflex:hover {
+  border:1px solid #7f7575;
+  border-radius: .5rem;
+  
+}
+.labelContainerflex:hover .labelContainerimage {
+  display: block;
+}
+
+.newLableConatiner{
+  width: 19rem;
+height: auto;
+position: absolute;
+top:80%;
+right: 7%;
+padding: 1rem;
+background: linear-gradient(139.9deg, #2C2D3C -1.55%, rgba(25, 26, 35, 0.1) 100%);
+border: 0.5px solid #7F7575;
+box-shadow: 0px 10px 12px rgba(25, 26, 35, 0.4);
+backdrop-filter: blur(6px);
+border-radius: 8px;
+z-index: 3;
+}  
+.labelButton{
+    box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 2px 66px 2px 10px;
+gap: 10px;
+
+width: 170px;
+height: 22px;
+font-size: 1.2rem;
+color:rgba(236, 235, 235, 0.6);;
+/* Active white color ( Demo ) */
+border: 0.5px solid rgba(236, 235, 235, 0.7);
+border-radius: 4px;
+  }
+  
+.newLableConatinerInput {
+  font-size: 1.2rem;
+background-color: transparent;
+}  
+  
+  /* ///////////////////  Calendar Style ////// */
+
+.calendarContainer{
+  position: absolute;
+  display: flex;
+top:120%;
+  right:-90%;
+
+  /* margin-top: 1rem; */
+  flex-direction: column;
+  padding: 20px;
+  width: 30rem;
+  height: auto;
+  background: linear-gradient(139.9deg, #2C2D3C -1.55%, rgba(25, 26, 35, 0.1) 100%);
+  border: 0.5px solid #7F7575;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  z-index: 5;
+  }
+
+
+  .calendarTop{
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1px 15px;
+  gap: 8px;
+  font-size: 1.4rem;
+  max-width: 12rem;
+
+  height: 26px;
+  
+  /* Grey */
+  border: 0.5px solid #413E3E;
+  border-radius: 35px;
+  }
+  .weekday {
+    color: white;
+  }
+  
+  .weekend {
+    color: red;
+    /* border-radius: 50%!important; */
+
+  }
+
+  .calendarBackground{
+    background:transparent !important;
+    border:none !important;
+    font-size:1.35rem;
+  }
+
+ 
+  :global(.react-calendar__tile--range) {
+    background-color: #4355FA!important;
+    color: red;
+    border-radius: 30px;
+  }
+  :global(.react-calendar__tile--range):hover{
+    border-radius: 1px solid red !important;
+  }
+  :global(.react-calendar__tile--now) {
+    background-color: #424242!important;
+    color: white;
+    border-radius: 30px;
+  
+  }
+  
+  :global(.react-calendar__tile) {
+    color: white;
+    border-radius: 50%!important;
+
+  }
+  :global(.react-calendar__tile):hover {
+    color: red;
+    border-radius: 50%!important;
+  }
+  :global(.react-calendar__month-view__days__day--weekend) {
+    color: red;
+  }
+  
+  :global(.react-calendar__tile) {
+    outline: none;
+  }
+  
+  
+  
+  
+  
+  

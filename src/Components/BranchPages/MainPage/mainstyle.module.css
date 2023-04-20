@@ -1,0 +1,428 @@
+.taskRemind {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 10px;
+  gap: 40px;
+  width: auto;
+  height: 46px;
+  left: 595px;
+  top: 313px;
+  background: conic-gradient(
+    from 180deg at 50% 58.33%,
+    rgba(45, 44, 60, 0.4) -90.66deg,
+    rgba(45, 44, 60, 0.4) 91.1deg,
+    rgba(45, 44, 60, 0.4) 269.34deg,
+    rgba(45, 44, 60, 0.4) 451.1deg
+  );
+
+  /* Grey light */
+  border: 0.5px solid #7f7575;
+
+  /* Drop Shadow */
+  box-shadow: 0px 10px 12px rgba(25, 26, 35, 0.4);
+  backdrop-filter: blur(6px);
+
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 6px;
+}
+
+.dropContainer {
+  width: 100%;
+  height:100%;
+  /* display: flex; */
+  /* flex-direction: column;
+  overflow-y: scroll; */
+  overflow-y: scroll;
+}
+.dropContainer::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 0.4rem;
+    color: transparent;
+  }
+  
+  .dropContainer::-webkit-scrollbar-track {
+    border-radius: 0.4rem;
+    background: transparent;
+  }
+  
+  .dropContainer::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 0.4rem;
+    border: 1px solid transparent;
+    width: 0.1rem;
+  }
+.droppableContainer {
+  /* max-height: 100%; */
+  height: 90%;
+
+  overflow-y: scroll;
+}
+
+.dragCard {
+  width: 100%;
+  height:88.2%;
+  font-size: 1.5rem;
+  background: linear-gradient(139.9deg, #2C2D3C -1.55%, rgba(25, 26, 35, 0.1) 100%);
+  padding: 2rem 0rem;
+  padding-left: 2rem;
+border: 0.5px solid #7F7575;
+backdrop-filter: blur(10px);
+border-left: .1px solid transparent;
+border-right: .1px solid transparent;
+  border-bottom: none;
+  backdrop-filter: blur(10px);
+  border-radius: 4px;
+}
+
+
+
+.quill {
+  max-height: 100%;
+  max-width: 100%;
+  overflow: auto;
+}
+.quill::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 0.4rem;
+  color: transparent;
+}
+
+.quill::-webkit-scrollbar-track {
+  border-radius: 0.4rem;
+  background: transparent;
+}
+
+.quill::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 0.4rem;
+  border: 1px solid rgb(54, 53, 53);
+  width: 0.1rem;
+}
+
+/* mainstyle.module.css */
+
+
+.dropDown1{
+  display: flex;
+flex-direction: column;
+/* align-items: center;s */
+position: absolute;
+padding:0rem 1rem ;
+margin-top: .5rem;
+margin-left: 15%;
+width: 11rem;
+height: auto;
+left:0rem;
+top: 0rem;
+/* Radial Gradient */
+background: radial-gradient(135.56% 125% at 49.56% 100%, #2C2D3C 0%, rgba(25, 26, 35, 0.1) 100%);
+
+/* Grey light */
+border: 0.25px solid #7F7575;
+
+/* Drop Shadow */
+box-shadow: 0px 10px 12px rgba(25, 26, 35, 0.4);
+backdrop-filter: blur(6px);
+
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 4px;
+}
+.dropDown2{
+  display: flex;
+flex-direction: column;
+/* align-items: center;s */
+position: absolute;
+padding:0rem 1rem ;
+margin-top: .5rem;
+margin-left: 15%;
+width: 8rem;
+height: auto;
+right:3rem;
+top: 0rem;
+/* Radial Gradient */
+background: radial-gradient(135.56% 125% at 49.56% 100%, #2C2D3C 0%, rgba(25, 26, 35, 0.1) 100%);
+
+/* Grey light */
+border: 0.25px solid #7F7575;
+
+/* Drop Shadow */
+box-shadow: 0px 10px 12px rgba(25, 26, 35, 0.4);
+backdrop-filter: blur(6px);
+
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 4px;
+}
+.semiCircle1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: .1rem 1rem;
+  gap: 8px;
+  width: auto;
+  height: 20px;
+  font-size: 1.2rem;
+  /* Grey */
+  border: 0.5px solid #413e3e;
+  border-radius: 10px;
+}
+
+/* ////////////////////////////////  New Domain */
+.editinputStyle{
+  background: transparent;
+  /* border: .5px solid #7f7575; */
+  border-radius: 5px;
+  outline: none;
+  font-size: 1.4rem;
+  color: #fff;
+  padding: .5rem;
+  height: 4rem;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+.editinputStyle:focus{
+  border:1px solid #6c79ff;
+} 
+
+.editable1_sub{
+  width: 100%;
+  height: 100%;
+  background-color:rgba(10, 10, 10, 0.6);
+  padding:0rem 1.5rem;
+  padding-bottom: 1rem;
+  border-radius: .5rem;
+  position: absolute;
+  top:0%;
+  left:0%;
+  z-index: 15;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+.editable1_sub1{
+  width: 750px;
+  min-height: 20rem;
+  background: linear-gradient(139.9deg, #2C2D3C -1.55%, rgba(25, 26, 35, 0.1) 100%);
+
+  /* Grey light */
+  border: 0.5px solid #7F7575;
+  backdrop-filter: blur(6px);
+  
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 4px;
+  padding:0rem 1.5rem;
+  border-radius: .5rem;
+  position: absolute;
+  top:34vh;
+  left:26.5%;
+  z-index: 16;
+}
+.editable1_sub2{
+  width: 100%;
+  height: 95%;
+  margin-top: 2.5rem;
+  background: linear-gradient(139.9deg, #2C2D3C -1.55%, rgba(25, 26, 35, 0.1) 100%);
+
+  /* Grey light */
+  border: 0.5px solid #7F7575;
+  backdrop-filter: blur(6px);
+  
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 4px;
+  padding:0rem 1.5rem;
+  border-radius: .5rem;
+
+  z-index: 16;
+}
+.crossStyle1{
+  display: flex;
+align-items: center;
+justify-content: center;
+  /* width: 100%; */
+  height: 100%;
+  width:4rem;
+  padding: .8rem 1rem;
+  border: 0.428571px solid transparent;
+
+}
+.crossStyle1:hover{
+  border-radius: .5rem;
+  background: linear-gradient(
+    135deg,
+    rgba(44, 45, 60, 0.8) 0%,
+    rgba(20, 20, 29, 0.1) 100%
+  );
+  
+  border: 0.428571px solid #413e3e;
+  box-shadow: 0px 3.42857px 10.2857px rgba(25, 26, 35, 0.2);
+  backdrop-filter: blur(4.28571px);
+}
+
+.AddStyle{
+  width: auto;
+  /* height: 100%; */
+  display: inline-block;
+  padding: .7rem 1.5rem;
+  color:#fff;
+  font-size: 1.2rem;
+  border-radius: .5rem;
+  border: 0.428571px solid #413e3e;
+}
+.AddStyle:hover{
+  background: linear-gradient(
+    135deg,
+    rgba(44, 45, 60, 0.8) 0%,
+    rgba(20, 20, 29, 0.1) 100%
+  );
+  border: 0.428571px solid #413e3e;
+  box-shadow: 0px 3.42857px 10.2857px rgba(25, 26, 35, 0.2);
+  backdrop-filter: blur(4.28571px);
+}
+
+.AllTeamContainer{
+  width:100%;
+  /* max-height: 9.6rem; */
+  /* height: auto; */
+  /* overflow-x: scroll; */
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+
+}
+.AllTeamSubContainer{
+  max-width:35rem;
+  /* height: 10.5rem; */
+  overflow-x: scroll;
+  display: flex;
+  align-items: center;
+}
+.AllTeamSubContainer1{
+  max-width:35rem;
+  /* height: 10.5rem; */
+  overflow-x: scroll;
+  display: flex;
+  align-items: center;
+}
+.AllTeamSubContainer1::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 0.4rem;
+  color: transparent;
+}
+
+.AllTeamSubContainer1::-webkit-scrollbar-track {
+  border-radius: 0.4rem;
+  background: transparent;
+}
+
+.AllTeamSubContainer1::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 0.4rem;
+  border: 1px solid transparent;
+  width: 0.1rem;
+}
+.AllTeamSubContainer::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 0.4rem;
+  color: transparent;
+}
+
+.AllTeamSubContainer::-webkit-scrollbar-track {
+  border-radius: 0.4rem;
+  background: transparent;
+}
+
+.AllTeamSubContainer::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 0.4rem;
+  border: 1px solid transparent;
+
+  width: 0.1rem;
+}
+
+.labelButtton{
+  display: flex;
+flex-direction: row;
+align-items: center;
+font-size: 1.5rem;
+
+padding: 2px 8px;
+gap: 10px;
+min-width: 10rem;
+min-height: 3rem;
+
+
+/* Linear Gradient */
+background: linear-gradient(139.9deg, #2C2D3C -1.55%, rgba(25, 26, 35, 0.1) 100%);
+
+/* Grey light */
+border: 0.5px solid #7F7575;
+
+/* Drop Shadow */
+box-shadow: 0px 10px 12px rgba(25, 26, 35, 0.4);
+backdrop-filter: blur(6px);
+
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 4px;
+}
+
+.priorityMainContainer{
+
+  position: absolute;
+  top:3rem;
+  left:0rem;
+  z-index: 20;
+}
+.priorityContainer{
+  display: flex;
+  flex-direction: column;
+  gap:1.5rem;
+  padding: 1rem;
+  text-decoration: none;
+  list-style: none;
+  height: auto;
+background: linear-gradient(139.9deg, #2C2D3C -1.55%, rgba(25, 26, 35, 0.1) 100%);
+border: 0.5px solid #7F7575;
+backdrop-filter: blur(6px);
+border-radius: .5rem;
+
+}
+
+
+.shapeContainer {
+  position: absolute;
+  height: 3rem;
+  width: 25rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background-color: red;
+}
+.shapeContainer1 {
+  position: absolute;
+bottom: .3rem;
+  height: .2rem;
+  width: 26rem;
+  /* border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem; */
+  background-color: red;
+}
+
+/* .shapeContainer::before
+ {
+  content: "";
+  position: absolute;
+  top: 2.5rem;
+  height: 3rem;
+  width: 21rem;
+  background-color: white;
+  border-style: solid;
+} */
+
+
+
+

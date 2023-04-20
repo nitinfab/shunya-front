@@ -1,0 +1,286 @@
+.boardControls {
+    display: flex;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+}
+
+.primaryControls {
+
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.2);
+    display: flex;
+    padding: 8px;
+}
+
+.boardName {
+    font-size: 1.8rem;
+    border-right: 1px solid #ccc;
+    cursor: text;
+    max-width: 80px;
+    overflow: hidden;
+    padding-right: 8px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.boardName br {
+    display: none;
+}
+
+.boardName * {
+    display: inline;
+    white-space: nowrap;
+}
+
+.iconButton {
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: 24px 24px;
+    cursor: pointer;
+    display: flex;
+    height: 24px;
+    width: 24px
+}
+
+.iconButton:hover {
+    background-color: #ccc;
+}
+
+.share_menu_wrapper {
+    position: relative;
+}
+
+.share {
+    margin-left: 8px;
+}
+
+.pulse {
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.share_menu {
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 48px;
+    width: 320px;
+}
+
+.share_menu_open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.share_menu_arrow {
+    border-bottom: 8px solid #fff;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    height: 1px;
+    left: 8px;
+    position: absolute;
+    top: -9px;
+    width: 1px;
+}
+
+.share_menu_sliderWrapper {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.share_menu_slider {
+    display: flex;
+    flex-direction: column;
+    transition: transform .3s, opacity .3s;
+    transform: translate3d(0, 0, 0);
+    min-width: 100%;
+}
+
+.share_menu_slider.slideLeft {
+    transform: translate3d(-100%, 0, 0);
+}
+
+.share_menu_fieldrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.share_menu_input {
+    font-size: 16px;
+    margin: 0 8px;
+    text-align: center;
+    width: 64px;
+}
+
+.share_menu_button {
+    cursor: pointer;
+    padding: 8px;
+    flex-grow: 1;
+}
+
+.share_menu_link {
+    max-width: 50%;
+    word-break: break-all;
+}
+
+
+.undoControls {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    margin-left: 16px;
+    padding: 8px;
+    position: relative;
+}
+
+.undo {
+    background-image: url("../../../icons/undo-24px.svg");
+    border-right: 1px solid #ccc;
+    padding-right: 8px;
+}
+
+.redo {
+    background-image: url("../../../icons/redo-24px.svg");
+    margin-left: 8px;
+}
+
+.forward {
+    background-image: url("../../../icons/arrow_forward-24px.svg");
+    background-position: center right;
+    border-left: 1px solid #ccc;
+    padding-left: 8px;
+}
+
+.backward {
+    background-image: url("../../../icons/arrow_back-24px.svg");
+    background-position: center left;
+    border-right: 1px solid #ccc;
+    padding-right: 8px;
+    margin-right: 8px;
+}
+
+.dropDown {
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-image: url("../../../icons/expand_more-24px.svg");
+    background-position: center right;
+    cursor: pointer;
+    padding-right: 24px;
+}
+
+.dropDown.openIcon {
+    background-image: url("../../../icons/expand_less-24px.svg");
+}
+
+.buttonDisabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.slideList.dropDown_open {
+    display: block;
+}
+
+.slideList {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    overflow: scroll;
+    position: absolute;
+    top: 105%;
+    max-height: 240px;
+    width: 100%;
+}
+
+.slideList_name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.slideList_name:hover {
+    background-color: #ccc;
+}
+
+.slideList_tools {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slideList_editName {
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-image: url("../../../icons/edit-24px.svg");
+    background-position: center right;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.slideList_close {
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-image: url("../../../icons/close-24px.svg");
+    background-position: center center;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.slideList_moveUp {
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-image: url("../../../icons/arrow_drop_up-24px.svg");
+    background-position: center right;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.slideList_moveDown {
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-image: url("../../../icons/arrow_drop_down-24px.svg");
+    background-position: center right;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+
+@keyframes pulse {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .boardName {
+        max-width: none;
+    }
+
+}

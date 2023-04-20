@@ -1,0 +1,87 @@
+
+.taskContainer {
+    width: 27rem;
+height: 20rem;
+background: linear-gradient(139.9deg, #2C2D3C -1.55%, rgba(25, 26, 35, 0.1) 100%);
+border: 0.5px solid #7F7575;
+backdrop-filter: blur(10px);
+border-radius: 4px;
+ }
+ .taskSubContainer{
+    width: 100%;
+height: 16rem;
+padding: 0rem 1rem;
+background: linear-gradient(139.9deg, #2C2D3C -1.55%, rgba(25, 26, 35, 0.1) 100%);
+border: 0.5px solid #7F7575;
+border-left: 0.1px solid transparent;
+border-right: 0.1px solid transparent;
+border-bottom: none;
+border-radius: 4px;
+ }
+
+ .calenderHeaderMonth{
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 1px 15px;
+font-size: .9rem;
+gap: 8px;
+width: auto;
+height: 26px;
+border: 0.5px solid #413E3E;
+border-radius: 35px;
+}
+
+
+
+
+.AreaChart{
+    width: 50rem;
+height: 35rem;
+background: linear-gradient(139.9deg, #2C2D3C -1.55%, rgba(25, 26, 35, 0.1) 100%);
+border: 0.5px solid #7F7575;
+backdrop-filter: blur(10px);
+border-radius: .4rem;
+}
+.AreaChartSub{
+    padding: 1rem;
+    width: 100%;
+    height: 30rem;
+background: linear-gradient(139.9deg, #2C2D3C -1.55%, rgba(25, 26, 35, 0.1) 100%);
+border: 0.5px solid #7F7575;
+border-left: .1px solid transparent;
+border-right: .1px solid transparent;
+border-bottom: none;
+backdrop-filter: blur(10px);
+border-radius: .4rem;
+}
+.AreaChartSub1{
+    padding: 1rem;
+    width: 100%;
+    height: 30rem;
+background: linear-gradient(139.9deg, #2C2D3C -1.55%, rgba(25, 26, 35, 0.1) 100%);
+border: 0.5px solid #7F7575;
+border-bottom: none;
+backdrop-filter: blur(10px);
+border-radius: .4rem;
+overflow-x: scroll;
+overflow-y: auto;
+}
+.AreaChartSub1::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 0.4rem;
+    color: transparent;
+  }
+  
+  .AreaChartSub1::-webkit-scrollbar-track {
+    border-radius: 0.4rem;
+    background: transparent;
+  }
+  
+  .AreaChartSub1::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 0.4rem;
+    border: 1px solid rgb(54, 53, 53);
+    width: 0.1rem;
+  }
